@@ -1,0 +1,3 @@
+* Sat Sep 10 2016 Ryan Parman <ryan.parman@wepay.com> 1.0.1-1
+- Initial build of the RPM.
+- Bundles Certstrap 1.0.1.
