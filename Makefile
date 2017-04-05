@@ -1,7 +1,6 @@
 NAME=certstrap
 VERSION=1.0.1
-ITERATION=1
-EPOCH=1
+ITERATION=1.lru
 PREFIX=/usr/local
 LICENSE=Apache-2.0
 VENDOR="Square"
@@ -21,7 +20,6 @@ info:
 	@ echo "NAME:        $(NAME)"
 	@ echo "VERSION:     $(VERSION)"
 	@ echo "ITERATION:   $(ITERATION)"
-	@ echo "EPOCH:       $(EPOCH)"
 	@ echo "PREFIX:      $(PREFIX)"
 	@ echo "LICENSE:     $(LICENSE)"
 	@ echo "VENDOR:      $(VENDOR)"
@@ -77,7 +75,6 @@ package:
 		-v $(VERSION) \
 		-C /tmp/installdir-$(NAME)-$(VERSION) \
 		-m $(MAINTAINER) \
-		--epoch $(EPOCH) \
 		--iteration $(ITERATION) \
 		--license $(LICENSE) \
 		--vendor $(VENDOR) \
